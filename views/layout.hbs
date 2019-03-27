@@ -2,25 +2,52 @@
 <html>
   <head>
     <title>{{title}}</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    <link rel='stylesheet' href='/stylesheets/main.css' />
+     <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <h1>Marvel Who's Who - A Primer</h1>
-        <a href="/">
-          <i class="fas fa-home"></i>
-        </a>
-      </nav>
-    </header>    
+<nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Park Hyo Shin</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Albums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Footer</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+      <header class="head">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">Park Hyo Shin</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">Korean Popular, Famous, Ballad Singer</h2>
+      </div>
+    </div>
+  </header>  
     <main>
       {{{body}}} <!-- this is like router view in Vue.js -->
     </main>
-    <img class="marvel-logo" src="/images/marvelstudios.jpg" alt="logo">
-    <footer>
-      <p>All characters and bio information &copy; Marvel Studios. Used totally without permission... don't tell anyone!</p>
+    <footer class="row">
+        <div class="col-12">
+            <p class="text-center"> © Copyright 2019 Park Hyo Shin | Privacy | Created by Changseok Lee</p>
+        </div>
+        
     </footer>
   </body>
 </html>

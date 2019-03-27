@@ -1,12 +1,21 @@
-<section id="heroes">
-    <!-- for apple in fruits = loop -->
-    <!-- This is a loops with handlebars -->
-    {{#each avatars}}
-        <div class="hero-container">
-            <a href="/{{name}}">
-                <img src="/images/{{avatar}}" alt="Avatars Images for Each Characters">
-            </a>
-        <h3 class="hero-name">{{name}}</h3>
+
+
+<section id="contents" class="contents-section bg-light">
+<div class="container">
+    {{#each info}}
+      <div class="row align-items-center mb-4 mb-lg-5 desc">
+        <div class="col-xl-8 col-lg-7">
+          <a href="/{{album_name}}">
+          <img src="/images/{{album_img}}" alt="Avatars Images for Each Characters" class="img-fluid md-3 md-lg-0">
+          </a>
         </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="contents-text">
+            <h4>{{album_name}}</h4>
+            <p>{{album_desc}}</p>
+          </div>
+        </div>
+      </div>
     {{/each}}
+</div>
 </section>
